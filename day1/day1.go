@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
+	"os"
 	"strconv"
 	"strings"
 )
@@ -19,7 +20,9 @@ func find_2020_prod(values []int) int {
 }
 
 func main() {
-	input, err := ioutil.ReadFile("input.txt")
+	filename := os.Args[1]
+
+	input, err := ioutil.ReadFile(filename)
 	if err != nil {
 		fmt.Println("File reading error", err)
 		return
@@ -37,6 +40,7 @@ func main() {
 	}
 	lines = temp
 
+	// Convert strings to integers
 	var ints []int
 	for _, i := range lines {
 		j, err := strconv.Atoi(i)

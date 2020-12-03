@@ -1,5 +1,3 @@
-import itertools
-
 def get_2020_multi(items):
     for x in items:
         for y in items:

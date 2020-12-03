@@ -24,7 +24,6 @@ for item in items:
     char = item[2]
     password = item[3]
 
-
     first = False
     try:
         first = password[min_val-1] == char
