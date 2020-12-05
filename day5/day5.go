@@ -11,6 +11,7 @@ import (
 func main() {
 	filename := os.Args[1]
 
+	// Get program input
 	input, err := ioutil.ReadFile(filename)
 	if err != nil {
 		fmt.Println("File reading error", err)
