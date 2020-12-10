@@ -120,7 +120,6 @@ func main() {
 	start := time.Now()
 	count := countForSubset(0, adapters)
 	duration := time.Since(start)
-	fmt.Println(duration)
-	fmt.Println(count)
-
+	fmt.Printf("Count: %d\n", count)
+	fmt.Printf("Duration: %s\n", duration)
 }
