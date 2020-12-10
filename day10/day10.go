@@ -11,17 +11,6 @@ import (
 	"time"
 )
 
-func isValid(adapters []int) bool {
-	prev := 0
-	for _, a := range adapters {
-		if a-prev > 3 {
-			return false
-		}
-		prev = a
-	}
-	return true
-}
-
 func sum(series ...int) int {
 	sum := 0
 	for i := range series {
